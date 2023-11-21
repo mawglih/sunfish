@@ -39,6 +39,45 @@ const Form = () => {
                             </select>
                     </div>
                 </div>
+                <div className={classes.column}>
+                    <div className={classes['row-radio']}>
+                        <label className={classes['radio-label']}>Question goes here</label>
+                        <span className={classes.subtext}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='true' name='true' />True
+                        </div>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='false' name='false'/>False
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.column}>
+                    <div className={classes['row-radio']}>
+                        <label className={classes['radio-label']}>Question goes here</label>
+                        <span className={classes.subtext}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='true' name='true' />True
+                        </div>
+                        <div className={classes['radio-question']}>
+                            Follow up question<input type='text' placeholder='0'/>
+                        </div>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='false' name='false'/>False
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.column}>
+                    <div className={classes['row-radio']}>
+                        <label className={classes['radio-label']}>Question goes here</label>
+                        <span className={classes.subtext}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='true' name='true' />True
+                        </div>
+                        <div className={classes['input-container']}>
+                            <input type='radio' value='false' name='false'/>False
+                        </div>
+                    </div>
+                </div>
                 <div className={classes['btn-column']}>
                     <button className={classes.btn}>Submit</button>
                 </div>
