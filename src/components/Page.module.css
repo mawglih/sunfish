@@ -1,0 +1,160 @@
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--secondary-bg-color);
+    width: 800px;
+    height: 925px;
+    padding: 0 0 240px 0;
+}
+.title {
+    padding-top: 108px;
+}
+.title1 {
+    display: block;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--primary-grad-color);
+}
+.subtitle {
+    font-weight: 400;
+}
+/* form  */
+.form-section {
+    box-sizing: border-box;
+    width: 800px;
+    padding: 1rem;
+    background-color: var(--fourth-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-top: none;
+    border-bottom: none;
+    margin-top: 1rem;
+}
+.form-section span {
+    padding-bottom: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+textarea {
+    width: 720px;
+}  
+input, select {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    width: 350px;
+  }
+ .btn {
+    background-color: var(--secondary-grad-color);
+    width: 159px;
+    padding: 15px 24px;
+    border-radius: 100px;
+    color: var(--main-text-color);
+    float: right;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 624px;
+        height: 813px;
+        padding: 0 24px 120px 24px;
+    }
+    .title {
+        padding-top: 50px;
+    }
+    .subtitle {
+        font-weight: 400;
+    }
+    /* form  */
+    .form-section {
+        width: 624px;
+    }
+    textarea {
+        width: 576px;
+    }  
+    input, select {
+        box-sizing: border-box;
+        display: block;
+        padding: 10px 20px 10px 20px;
+        width: 288px;
+      }
+}
+@media screen and (max-width: 390px) {
+    .form-section {
+        width: 358px;
+    }
+    .form-section span {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    textarea {
+        width: 288px;
+        box-sizing: border-box;
+        display: flex;
+    }  
+    label {
+        align-self: flex-start;
+    }
+    .btn {
+        width: 342px;
+        height: 51px;
+        padding: 16px 24px;
+        border-radius: 100px;
+        gap: 8px;
+    }
+    .container {
+        width: 358px;
+        height: 1071px;
+        padding: 0 0 120px 0;
+        gap: 24px;
+    }
+    .title {
+        padding: 0;
+    }
+    .title1 {
+        display: block;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        color: var(--primary-grad-color);
+    }
+    .subtitle {
+        font-weight: 400;
+    }
+}
